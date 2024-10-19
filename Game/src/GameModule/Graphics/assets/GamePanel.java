@@ -1,6 +1,6 @@
 package GameModule.Graphics.assets;
 
-import java.awt.Color;
+import java.awt.*;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -22,7 +22,7 @@ public class GamePanel extends JPanel implements Runnable {
     public final int screenHeight = tileSize  * maxScreenRow;
 
         // world setting
-        public final int maxWorldCol = 50;
+    public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
     public final int worldWidth = tileSize + maxWorldCol;
     public final int worldHeight = tileSize + maxWorldRow;
@@ -30,8 +30,8 @@ public class GamePanel extends JPanel implements Runnable {
     //FPS
     int FPS = 60;
 
-       TileManager tileM = new TileManager(this);
-       KeyHandler keyH = new KeyHandler();
+    TileManager tileM = new TileManager(this);
+    KeyHandler keyH = new KeyHandler();
     Thread gameThread;
     public CollisionChecker cChecker = new CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
