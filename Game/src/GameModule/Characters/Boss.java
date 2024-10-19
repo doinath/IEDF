@@ -6,6 +6,7 @@ public class Boss extends Character implements Battle {
     public Boss() {
         name = "Boss";
         hitPoints = 100;
+        attackPower = 5;
     }
 
     public boolean takenDamage(int damage) {
