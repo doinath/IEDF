@@ -1,7 +1,7 @@
 package GameModule.Graphics.object;
 
-import java.io.IOException;
 import javax.imageio.ImageIO;
+import java.io.IOException;
 
 public class Obj_Key extends SuperObject {
     public Obj_Key(){

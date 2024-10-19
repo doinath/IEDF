@@ -24,15 +24,23 @@ public class Boss extends Character implements Battle {
     }
 
     @Override
-    public int basic_attack(int damage) {
+    public int basic_attack() {
+        int damage = random.nextInt(attackPower+1);
         System.out.println("Attacks with "+ damage+ " total damage");
 
         return damage;
     }
 
     @Override
-    public int skill(String skillName, int damage) {
-        return 1;
+    public void takeDamage(int damage) {
+
     }
+
+
+    @Override
+    public boolean isAlive() {
+        return (hitPoints > 0);
+    }
+
 }
 

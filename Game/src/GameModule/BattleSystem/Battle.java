@@ -1,6 +1,9 @@
 package GameModule.BattleSystem;
 
 public interface Battle {
-    int basic_attack(int damage);
-    int skill(String skillName, int damage);
+
+    int basic_attack();
+    void takeDamage(int damage);
+    boolean isAlive();
+    
 }

@@ -2,7 +2,7 @@ package GameModule.Graphics.assets;
 
 import GameModule.Graphics.object.*;
 
-public class AssetSetter {
+public class AssetSetter  {
     GamePanel gp;
     public AssetSetter(GamePanel gp){
         this.gp = gp;

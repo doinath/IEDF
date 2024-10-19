@@ -1,16 +1,19 @@
 package GameModule.Graphics.object;
 
-import java.io.IOException;
 import javax.imageio.ImageIO;
+import java.io.IOException;
 
 public class Obj_Door extends SuperObject {
-    public Obj_Door(){
-        name = "Door";
-        try{
-            image = ImageIO.read(getClass().getResourceAsStream("/GameModule/Graphics/media/media/objects/door.png"));
-        } catch(IOException e){
+    public Obj_Door() {
+        this.name = "Door";
+
+        try {
+            this.image = ImageIO.read(this.getClass().getResourceAsStream("/GameModule/Graphics/media/media/objects/door.png"));
+        } catch (IOException var2) {
+            IOException e = var2;
             e.printStackTrace();
         }
-        collision = true;
+
+        this.collision = true;
     }
 }

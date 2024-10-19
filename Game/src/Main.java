@@ -1,23 +1,16 @@
-import javax.swing.JFrame;
+import javax.swing.*;
+
 import GameModule.Graphics.assets.GamePanel;
+import GameModule.Graphics.mainMenu.*;
+
+import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
+        //JFrame frame;
+        MainMenu mm;
 
-        JFrame frame = new JFrame();
+        mm = new MainMenu();
 
-        frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
-        frame.setTitle("I Entered the Dungeon as a Farmer: Tale of Two Brothers");
-
-        GamePanel gp = new GamePanel();
-        frame.add(gp);
-        frame.pack();
-
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
-        gp.setupGame();
-        gp.startGameThread();
     }
 }
