@@ -28,5 +28,7 @@ public class MainMenu {
         titlePanel.add(titleLabel);
         con.add(titlePanel);
 
+
+        System.out.print("hi oten");
     }
 }
