@@ -33,9 +33,12 @@ public class Boss extends Character implements Battle {
 
     @Override
     public void takeDamage(int damage) {
+        if (!isAlive()) {
+            return;
+        }
 
+        hitPoints -= damage;
     }
-
 
     @Override
     public boolean isAlive() {

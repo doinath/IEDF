@@ -9,6 +9,4 @@ public abstract class Character {
     public int attackPower;
 
     Random random = new Random();
-
-
 }

@@ -2,10 +2,11 @@ package GameModule.Characters;
 
 import GameModule.BattleSystem.Battle;
 
-public class Hakobe extends Character implements Battle {
 
-    public Hakobe() {
-        name = "Hakobe";
+public class Andres extends Character implements Battle {
+
+    public Andres() {
+        name = "Andres";
         hitPoints = 100;
         level = 1;
         attackPower = 5;
@@ -13,6 +14,7 @@ public class Hakobe extends Character implements Battle {
 
     @Override
     public int basic_attack() {
+
         if (!isAlive()) {
             return -1;
         }
@@ -25,9 +27,12 @@ public class Hakobe extends Character implements Battle {
 
     @Override
     public void takeDamage(int damage) {
-        if (!isAlive()) {
+        if(!isAlive()) {
             return;
         }
+
+        hitPoints -= damage;
+
     }
 
     @Override
